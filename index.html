@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    Product Recommendation Engine
+  </title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="background"></div>
+
+  <div class="container">
+
+    <!-- USER INFO -->
+
+    <div class="user-info">
+
+      <div class="pfp">
+        👤
+      </div>
+
+      <div>
+
+        <p class="welcome">
+          Logged in as
+        </p>
+
+        <h3 id="username">
+          Guest
+        </h3>
+
+      </div>
+
+    </div>
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+      <div class="hero-left">
+
+        <h1>
+          Product Search
+          <span>
+            & Recommendation
+          </span>
+        </h1>
+
+        <p>
+          Search products across multiple platforms and discover the best deals in one place.
+        </p>
+
+      </div>
+
+      <!-- SEARCH PANEL -->
+
+      <div class="search-panel">
+
+        <input
+          id="searchInput"
+          type="text"
+          placeholder="Search iPhone, Nike, Headphones..."
+        >
+
+        <div class="buttons">
+
+          <button onclick="searchProduct()">
+            Search Product
+          </button>
+
+          <button class="pink">
+            Image Search
+          </button>
+
+        </div>
+
+        <div class="buttons">
+
+          <button onclick="location.href='login.html'">
+            Login
+          </button>
+
+          <button
+            class="pink"
+            onclick="location.href='signup.html'"
+          >
+            Sign Up
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- SEARCH RESULTS -->
+
+    <div
+      id="results"
+      class="results"
+    >
+
+    </div>
+
+    <!-- RECOMMENDATIONS -->
+
+    <section class="product-grid">
+
+      <!-- CARD 1 -->
+
+      <div class="card">
+
+        <img
+          src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=1200&auto=format&fit=crop"
+        >
+
+        <div class="card-content">
+
+          <div class="top">
+
+            <span class="tag">
+              Audio
+            </span>
+
+            <span class="price">
+              ₹24,999
+            </span>
+
+          </div>
+
+          <h2>
+            Sony WH-1000XM5
+          </h2>
+
+          <p>
+            Recommended based on trending searches.
+          </p>
+
+          <button>
+            View Recommendation
+          </button>
+
+        </div>
+
+      </div>
+
+      <!-- CARD 2 -->
+
+      <div class="card">
+
+        <img
+          src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=1200&auto=format&fit=crop"
+        >
+
+        <div class="card-content">
+
+          <div class="top">
+
+            <span class="tag">
+              Wearables
+            </span>
+
+            <span class="price">
+              ₹39,999
+            </span>
+
+          </div>
+
+          <h2>
+            Apple Watch
+          </h2>
+
+          <p>
+            Popular smart wearable recommendation.
+          </p>
+
+          <button>
+            View Recommendation
+          </button>
+
+        </div>
+
+      </div>
+
+      <!-- CARD 3 -->
+
+      <div class="card">
+
+        <img
+          src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1200&auto=format&fit=crop"
+        >
+
+        <div class="card-content">
+
+          <div class="top">
+
+            <span class="tag">
+              Fashion
+            </span>
+
+            <span class="price">
+              ₹7,999
+            </span>
+
+          </div>
+
+          <h2>
+            Nike Air Force 1
+          </h2>
+
+          <p>
+            Trending fashion recommendation.
+          </p>
+
+          <button>
+            View Recommendation
+          </button>
+
+        </div>
+
+      </div>
+
+      <!-- CARD 4 -->
+
+      <div class="card">
+
+        <img
+          src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=1200&auto=format&fit=crop"
+        >
+
+        <div class="card-content">
+
+          <div class="top">
+
+            <span class="tag">
+              Photography
+            </span>
+
+            <span class="price">
+              ₹62,999
+            </span>
+
+          </div>
+
+          <h2>
+            Canon EOS R50
+          </h2>
+
+          <p>
+            Recommended camera for creators.
+          </p>
+
+          <button>
+            View Recommendation
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </div>
+
+  <script src="app.js"></script>
+
+</body>
+
+</html>
